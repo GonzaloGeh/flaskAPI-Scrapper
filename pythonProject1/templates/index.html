@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Interfaz de API</title>
+</head>
+<body>
+    <h1>Selecciona una opción:</h1>
+    <form action="/descargar_archivo" method="post">
+        <select name="opcion">
+            {% for opcion in opciones %}
+                <option value="{{ opcion }}">{{ opcion }}</option>
+            {% endfor %}
+        </select>
+        <input type="submit" value="Enviar">
+    </form>
+</body>
+</html>
